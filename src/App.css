@@ -29,3 +29,7 @@
   cursor: pointer;
   outline-offset: 4px;
 }
+
+.initial-heading{
+  margin: 20px;
+}

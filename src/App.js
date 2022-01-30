@@ -129,7 +129,7 @@ const App = () => {
         {isLast ? <h3>You reached end of list</h3> : null}
       </>
       :
-      <h3>Please login to view something amazing</h3>
+      <h3 className="initial-heading">Please login to view something amazing</h3>
       }
     </>
   );
