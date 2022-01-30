@@ -3,3 +3,29 @@
   width:150px;
   margin-right: 20px;
 }
+
+.header{
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  margin:5px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.title{
+  margin: 20px;
+}
+
+.btn{
+  float: right;
+  margin:0px 25px ;
+  width:100px;
+  height:40px;
+  background: #fff;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
