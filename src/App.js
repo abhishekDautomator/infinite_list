@@ -10,7 +10,6 @@ const App = () => {
   const [error, setError] = useState(false);
   const [totalListLength, setTotalListLength] = useState(0);
   const [isLast, setIsLast] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showLoginPopup, setShowLoginPopup] = useState(false);
 
@@ -65,9 +64,9 @@ const App = () => {
     if (isFetching || page === 1) {
       console.log("loadData method is called");
       if (page <= totalListLength || page === 1) {
-        setIsLoading(true);
-        loadData();
-        setIsLoading(false);
+        setTimeout(()=>{
+          loadData();
+        },500);
       } else {
         setIsLast(true);
       }
@@ -126,7 +125,6 @@ const App = () => {
               <span>{image.title}</span>
             </li>
           ))}
-          {isLoading ? "Loading list" : null}
         </ul>
         {isLast ? <h3>You reached end of list</h3> : null}
       </>
